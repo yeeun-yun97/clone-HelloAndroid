@@ -21,11 +21,13 @@ class MainActivity : AppCompatActivity() {
         var myEdittext = findViewById<EditText>(R.id.my_edittext)
         var myButton = findViewById<Button>(R.id.my_btn)
 
-        myButton.setOnClickListener(object: View.OnClickListener{
-            override fun onClick(v:View?){
-                var btnLabel = (v as Button).text
-                Toast.makeText(applicationContext,"button Label : ${btnLabel}", Toast.LENGTH_LONG).show()
-            }
-        })
+        myButton.setOnClickListener{
+            var btnLabel = (it as Button).text
+            Toast.makeText(applicationContext,"button Label : ${btnLabel}", Toast.LENGTH_LONG).show()
+        }
+
+
+
+
     }
 }
