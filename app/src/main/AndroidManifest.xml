@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloAndroid">
         <activity
-            android:name=".MainActivity"
+            android:name=".LogCatAndToastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelloActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
