@@ -6,25 +6,21 @@
 
     <TextView
         android:id="@+id/my_textview"
-        android:text="@string/greeting"
-        android:background="@color/red"
+        android:text="Hello Android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp" />
 
     <EditText
+        android:id="@+id/my_edittext"
         android:text="입력 힌트"
-        android:background="@color/green"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:inputType="textPersonName"
         />
 
     <Button
         android:id="@+id/my_btn"
         android:text="CLICK"
-        android:onClick="onClickFunc"
-        android:background="@color/blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
