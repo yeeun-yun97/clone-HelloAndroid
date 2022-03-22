@@ -3,6 +3,8 @@ package com.github.yeeun_yun97.clone.HelloAndroid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
+import android.widget.Toast
 
 class LogCatAndToastActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +17,9 @@ class LogCatAndToastActivity : AppCompatActivity() {
         Log.w("tag_name4", "Warning Message")//경고 메시지
         Log.e("tag_name5", "Error Message")//에러 발생 메시지
 
-
+        var toast: Toast = Toast.makeText(this, "Toast Message (Short)", Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER or Gravity.LEFT, 0, 0)
+        toast.show()
 
     }
 }

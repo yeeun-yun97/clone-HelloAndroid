@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloAndroid">
         <activity
+            android:name=".LifeCycleActivity"
+            android:exported="false" />
+        <activity
             android:name=".LogCatAndToastActivity"
             android:exported="false" />
         <activity
