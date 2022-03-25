@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RelativeLayoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="center L" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center"
+            tools:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="center R"
+            tools:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_above="@id/center"
+            android:layout_alignLeft="@id/center"
+            android:layout_centerInParent="true"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/center"
+            android:layout_alignRight="@id/center"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@id/center"
+            android:layout_toLeftOf="@id/center"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@id/center"
+            android:layout_toRightOf="@id/center"
+            android:text="5" />
+
+
+    </RelativeLayout>
+</LinearLayout>
