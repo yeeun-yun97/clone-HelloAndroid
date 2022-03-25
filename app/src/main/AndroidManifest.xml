@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloAndroid">
         <activity
+            android:name=".LinearLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".InstantStateActivity"
             android:exported="false" />
         <activity
