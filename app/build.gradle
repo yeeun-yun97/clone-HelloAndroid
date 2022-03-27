@@ -4,15 +4,18 @@ plugins {
 }
 
 android {
+    //컴파일 할 skd 버전. 일반적으로 지원하는 버전 중 제일 최신으로 설정한다.
     compileSdk 32
 
     defaultConfig {
+        //패키지명. 일종의 식별자로 유니크한 값을 지님.
         applicationId "com.github.yeeun_yun97.clone.HelloAndroid"
+        //지원하는 가장 낮은 버전과 기대하는 버전.
         minSdk 23
         targetSdk 32
+        //버전명. 앱스토어에 올릴 때 버전이 올라가야(이전과 달라) 출시가 가능하다.
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -32,7 +35,7 @@ android {
 }
 
 dependencies {
-
+    //외부 라이브러리와 관련된 의존성 설정.
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
