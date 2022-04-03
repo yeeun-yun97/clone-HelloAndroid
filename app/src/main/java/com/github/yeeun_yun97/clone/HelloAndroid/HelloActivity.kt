@@ -10,16 +10,18 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 
 class HelloActivity : AppCompatActivity() {
+    private val myTextView : TextView by lazy{findViewById(R.id.my_textview)}
+    private val myEditText : EditText by lazy{findViewById(R.id.my_edittext)}
+    private val myButton : Button by lazy {findViewById(R.id.my_btn)}
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        var myTextView: TextView = findViewById(R.id.my_textview)
         val greetingMsg = resources.getText(R.string.greeting).toString()
         val redColor = ContextCompat.getColor(applicationContext, R.color.red)
 
-        var myEdittext = findViewById<EditText>(R.id.my_edittext)
-        var myButton = findViewById<Button>(R.id.my_btn)
+        myTextView.setText(greetingMsg)
+        myTextView.setBackgroundColor(redColor)
 
         //인자가 하나인 추상 메서드의 경우, 파라미터 이름도 안 정하고 it라는 이름으로 사용하여 아주 극적으로 코드를 줄일 수 있다.
         myButton.setOnClickListener {
